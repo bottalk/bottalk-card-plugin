@@ -16,5 +16,5 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 COPY --from=builder /go/src/github.com/bottalk/bottalk-card-plugin/plugin .
 
-EXPOSE 9080/tcp
+EXPOSE 9081/tcp
 ENTRYPOINT ["./plugin"]
