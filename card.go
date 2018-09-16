@@ -52,10 +52,12 @@ func main() {
 			}
 
 			card := Card{
+				Type:  "Standard",
 				Title: BTR.Vars["title"],
 				Text:  BTR.Vars["text"],
 				Image: ImageDescription{
 					SmallImage: BTR.Vars["image"],
+					LargeImage: BTR.Vars["image"],
 				},
 			}
 
